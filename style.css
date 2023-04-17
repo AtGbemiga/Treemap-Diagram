@@ -1,0 +1,9 @@
+#map-svg{
+    background-color: whitesmoke;
+    min-height: 1000px;
+    min-width: 1000px;
+}
+
+#tooltip{
+    visibility: hidden;
+}
