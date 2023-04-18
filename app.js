@@ -13,7 +13,7 @@ const plotMap = () => {
     })
 
     let createTreeMap = d3.treemap()
-        .size([1000, 1000])
+        .size([1000, 600])
     createTreeMap(hierarchy)
 
     let movieTiles = hierarchy.leaves()

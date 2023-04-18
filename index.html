@@ -7,37 +7,52 @@
     <title>Visualize Data with a Treemap Diagram</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="treemap logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1 id="title">Video Game Sales</h1>
-    <h3 id="description">Top 100 Most Sold Video Games Grouped by Platform</h3>
-    <div id="tooltip">
+<body style="display: flex; justify-content: center; align-items: center; gap: 1rem;">
+    <section style="margin-right: auto;">
+        <h1 id="title">Video Game Sales</h1>
+        <h3 id="description" style="margin-right: auto;">Top 100 Most Sold Video Games Grouped by Platform</h3>
+        <svg id="map-svg">
 
-    </div>
-    <svg id="legend">
-        <g>
-            <rect height="40" width="40" fill="rgb(222, 82, 83)" class="legend-item"></rect>
-        </g>
-        <g>
-            <rect height="40" width="40" fill="rgb(173, 229, 161)" class="legend-item"></rect>
-        </g>
-        <g>
-            <rect height="40" width="40" fill="rgb(193, 209, 151)" class="legend-item"></rect>
-        </g>
-        <g>
-            <rect height="40" width="40" fill="rgb(43, 229, 161)" class="legend-item"></rect>
-        </g>
-        <g>
-            <rect height="40" width="40" fill="rgb(200, 229, 161)" class="legend-item"></rect>
-        </g>
-        <g>
-            <rect height="40" width="40" fill="rgb(90, 235, 111)" class="legend-item"></rect>
-        </g>
-    </svg>
-    <svg id="map-svg">
+        </svg>
+    </section>
+    <section style="width: 30%;">
+        <div>
+            <div id="tooltip">
 
-    </svg>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+            </div>
+        </div>
+        <svg id="legend">
+            <g>
+                <rect x="10" y="0" height="40" width="40" fill="rgb(222, 82, 83)" class="legend-item"></rect>
+                <text x="60" y="20">Action</text>
+            </g>
+            <g>
+                <rect x="10" y="40" height="40" width="40" fill="rgb(173, 229, 161)" class="legend-item"></rect>
+                <text x="60" y="60">Adventure</text>
+            </g>
+            <g>
+                <rect x="10" y="80" height="40" width="40" fill="rgb(193, 209, 151)" class="legend-item"></rect>
+                <text x="60" y="100">Comedy</text>
+            </g>
+            <g>
+                <rect x="10" y="120" height="40" width="40" fill="rgb(43, 229, 161)" class="legend-item"></rect>
+                <text x="60" y="140">Drama</text>
+            </g>
+            <g>
+                <rect x="10" y="160" height="40" width="40" fill="rgb(200, 229, 161)" class="legend-item"></rect>
+                <text x="60" y="180">Animation</text>
+            </g>
+            <g>
+                <rect x="10" y="200" height="40" width="40" fill="rgb(90, 235, 111)" class="legend-item"></rect>
+                <text x="60" y="220">Biography</text>
+            </g>
+        </svg>
+    </section>
     <script src="app.js"></script>
 </body>
 </html>

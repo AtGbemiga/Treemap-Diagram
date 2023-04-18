@@ -1,9 +1,18 @@
+body{
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right,#6124ce,#849ba8);
+}
 #map-svg{
     background-color: whitesmoke;
-    min-height: 1000px;
+    height: 600px;
     min-width: 1000px;
 }
 
 #tooltip{
     visibility: hidden;
 }
+#legend{
+   display: inline-block;
+   margin-top: 2rem;
+}
+/*issues exist with text wrap inside treemap and legend not displaying all*/
